@@ -1,0 +1,23 @@
+print("Enter 5 Elements for Set A: ")
+E = []
+for i in range(5):
+    E.append(input())
+E = set(E)
+
+print("Enter 5 Elements for Set B: ")
+N = []
+for i in range(5):
+    N.append(input())
+N = set(N)
+
+# set union
+print("Union of E and N is",E |N)
+
+# set intersection
+print("Intersection of E and N is",E & N)
+
+# set difference
+print("Difference of E and N is",E - N)
+
+# set symmetric difference
+print("Symmetric difference of E and N is",E ^ N)
